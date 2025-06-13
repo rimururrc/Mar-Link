@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login - Central Mar-Ope</title>
+  <title>Login - Central Operativo</title>
   <style>
     body {
-      background-color: #000;
+      background: #000 url('imagem_cinza.png') no-repeat center center fixed; /* Backplate */
+      background-size: cover; /* Cobrir toda a tela */
       color: #fff;
       font-family: Arial, sans-serif;
       display: flex;
@@ -16,11 +17,12 @@
       margin: 0;
     }
     .login-box {
-      background-color: #1f1f1f;
+      background-color: rgba(31, 31, 31, 0.8); /* Fundo semi-transparente */
       padding: 2rem;
       border-radius: 10px;
       text-align: center;
       width: 300px;
+      backdrop-filter: blur(5px); /* Efeito de desfoque (opcional) */
     }
     input[type="password"] {
       width: 100%;
