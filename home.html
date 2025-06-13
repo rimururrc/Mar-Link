@@ -26,20 +26,23 @@
       transform: translateX(-50%);
     }
 
-    .logo-bar, .button-bar {
+     .logo-bar, .button-bar {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       padding: 20px;
       justify-content: center;
-      background-color: #1f1f1f;
+      background-color: rgba(31, 31, 31, 0.7); /* Fundo semi-transparente */
+      border-radius: 10px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(5px); /* Efeito de desfoque (opcional) */
     }
 
     .ai-button, .prompt-button {
       display: flex;
       align-items: center;
       gap: 8px;
-      background-color: #1a1a1a;
+      background-color: rgba(26, 26, 26, 0.9); /* Cor com transparência */
       color: white;
       text-decoration: none;
       padding: 10px 16px;
@@ -51,7 +54,7 @@
     }
 
     .ai-button:hover, .prompt-button:hover {
-      background-color: #333;
+      background-color: rgba(51, 51, 51, 0.9); /* Hover com transparência */
     }
 
     .ai-button img {
